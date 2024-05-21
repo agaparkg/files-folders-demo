@@ -7,14 +7,14 @@ function HelperFunction({ data }) {
       {data.map((item, index) => {
         if (item.type === "file") {
           return (
-            <li>
+            <li key={index}>
               <FaFile /> {item.name}
             </li>
           );
         }
 
         return (
-          <li>
+          <li key={index}>
             <FaFolder style={{ color: "red" }} /> {item.name}
             <HelperFunction data={item.children} />
           </li>
