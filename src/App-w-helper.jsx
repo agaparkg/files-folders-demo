@@ -5,7 +5,11 @@ import HelperFunction from "./components/HelperFunction";
 function App() {
   return (
     <div className="wrapper">
-      {data.length ? <HelperFunction data={data} /> : <p>No data found!</p>}
+      {data.length ? (
+        <HelperFunction data={data} />
+      ) : (
+        <p style={{ textAlign: "center" }}>No data found!</p>
+      )}
     </div>
   );
 }

@@ -6,6 +6,8 @@ import data from "./assets/data.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <div className="wrapper">
+      <App data={data} />
+    </div>
   </React.StrictMode>
 );
