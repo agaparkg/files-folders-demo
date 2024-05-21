@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App-w-helper-api.jsx";
+import App from "./App-w-helper.jsx";
 import "./index.css";
 import data from "./assets/data.js";
 
